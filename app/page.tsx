@@ -5,6 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ChevronLeft, ChevronRight, Mail, Phone, MapPin, ExternalLink, Github, Linkedin, Download } from "lucide-react"
+import { FaHtml5, FaJs, FaCss3Alt, FaBootstrap, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiGithub, SiJavascript, SiTypescript, SiVite, SiRedux, SiFirebase, SiPostman, SiNetlify, SiCanva, SiJsonwebtokens, SiGooglegemini } from "react-icons/si";
+import { MdApi } from "react-icons/md";
+import Image from "next/image";
+
 
 const pages = [
   { id: 1, title: "Profile" },
@@ -123,19 +128,28 @@ export default function Portfolio() {
                     </div>
 
                     <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                      <Button variant="outline" size="sm">
-                        <Download className="w-4 h-4 mr-2" />
-                        Download CV
+                      <Button asChild variant="outline" size="sm">
+                        <a href="https://drive.google.com/file/d/1nOxea8KrXNiJ7PI_fFUBThfiDQN1iN1p/view?usp=sharing" target="_blank" download>
+                          <Download className="w-4 h-4 mr-2" />
+                          Download CV
+                        </a>
                       </Button>
-                      <Button variant="outline" size="sm">
-                        <Linkedin className="w-4 h-4 mr-2" />
-                        LinkedIn
+
+                      <Button asChild variant="outline" size="sm">
+                        <a href="https://www.linkedin.com/in/jagadish-p-b27392266/" target="_blank" rel="noopener noreferrer">
+                          <Linkedin className="w-4 h-4 mr-2" />
+                          LinkedIn
+                        </a>
                       </Button>
-                      <Button variant="outline" size="sm">
-                        <Github className="w-4 h-4 mr-2" />
-                        GitHub
+
+                      <Button asChild variant="outline" size="sm">
+                        <a href="https://github.com/P-JAGADISH" target="_blank" rel="noopener noreferrer">
+                          <Github className="w-4 h-4 mr-2" />
+                          GitHub
+                        </a>
                       </Button>
                     </div>
+
                   </div>
 
                   <div className="flex-1">
@@ -166,20 +180,55 @@ export default function Portfolio() {
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                           <h3 className="text-xl font-bold text-gray-800">Frontend Developer</h3>
-                          <Badge variant="secondary">April 2025 - Present</Badge>
+                          <Badge variant="secondary">April 2025 - August-2025</Badge>
                         </div>
                         <h4 className="text-lg text-blue-600 font-semibold mb-3">Jayam Web Solutions Pvt Ltd</h4>
                         <p className="text-gray-600 mb-4">
-                          Built admin dashboards, user-facing interfaces, and static business websites using React.js,
-                          HTML, CSS, Bootstrap, and JavaScript.
+                          I developed responsive UIs and dashboards using React.js with Tailwind CSS and Bootstrap, focusing on smooth navigation across product listing, cart, and checkout pages. I also implemented secure authentication flows including Google OAuth, Email/Password, and JWT for reliable user login.
+
+                          Additionally, I used Redux for state management and integrated REST APIs to deliver real-time data. I collaborated with backend teams for seamless API consumption, while ensuring cross-browser compatibility, mobile responsiveness, and optimized performance.
                         </p>
                         <div className="flex flex-wrap gap-2">
-                          <Badge>React.js</Badge>
-                          <Badge>JavaScript</Badge>
-                          <Badge>HTML</Badge>
-                          <Badge>CSS</Badge>
-                          <Badge>Bootstrap</Badge>
-                          <Badge>Firebase</Badge>
+
+
+                          <Card>
+                            <CardContent className="p-6">
+                              <h3 className="text-xl font-bold text-gray-800 mb-4">Core Skills</h3>
+                              <div className="flex flex-wrap gap-3">
+                                <div className="flex items-center gap-2 bg-cyan-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaReact className="text-xl" /> React.js
+                                </div>
+                                <div className="flex items-center gap-2 bg-yellow-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaJs className="text-xl" /> JavaScript
+                                </div>
+                                <div className="flex items-center gap-2 bg-orange-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaHtml5 className="text-xl" /> HTML
+                                </div>
+                                <div className="flex items-center gap-2 bg-blue-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaCss3Alt className="text-xl" /> CSS
+                                </div>
+                                <div className="flex items-center gap-2 bg-purple-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaBootstrap className="text-xl" /> Bootstrap
+                                </div>
+                                <div className="flex items-center gap-2 bg-cyan-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <SiTailwindcss className="text-xl" /> Tailwind CSS
+                                </div>
+                                <div className="flex items-center gap-2 bg-black text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaGitAlt className="text-xl" /> Git
+                                </div>
+                                <div className="flex items-center gap-2 bg-gray-700 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <SiGithub className="text-xl" /> GitHub
+                                </div>
+                                <div className="flex items-center gap-2 bg-violet-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <SiRedux className="text-xl" /> Redux
+                                </div>
+                                <div className="flex items-center gap-2 bg-green-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <SiPostman className="text-xl" /> REST APIs
+                                </div>
+                              </div>
+                            </CardContent>
+                          </Card>
+
                         </div>
                       </CardContent>
                     </Card>
@@ -192,15 +241,33 @@ export default function Portfolio() {
                         </div>
                         <h4 className="text-lg text-purple-600 font-semibold mb-3">JK Global IT Solutions</h4>
                         <p className="text-gray-600 mb-4">
-                          Developed responsive UIs and dashboards using React.js, Tailwind CSS, and Bootstrap. Built
-                          product listing, cart, and checkout interfaces with smooth navigation.
+                          I built admin dashboards, user-facing interfaces, and static business websites using React.js, HTML, CSS, Bootstrap, and JavaScript. These projects focused on creating responsive, clean, and user-friendly designs tailored to business needs.
+
+                          I also integrated Firebase Authentication (Google Sign-In and Email/Password) with Firestore and Storage, used Email.js for contact form submissions without a backend, and deployed applications via Firebase Hosting with domain setup through GoDaddy.
                         </p>
                         <div className="flex flex-wrap gap-2">
-                          <Badge>React.js</Badge>
-                          <Badge>Tailwind CSS</Badge>
-                          <Badge>Redux</Badge>
-                          <Badge>REST APIs</Badge>
-                          <Badge>Firebase</Badge>
+                          <Card>
+                            <CardContent className="p-6">
+                              <h3 className="text-xl font-bold text-gray-800 mb-4">Highlighted Skills</h3>
+                              <div className="flex flex-wrap gap-3">
+                                <div className="flex items-center gap-2 bg-yellow-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaJs className="text-xl" /> JavaScript
+                                </div>
+                                <div className="flex items-center gap-2 bg-orange-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaHtml5 className="text-xl" /> HTML
+                                </div>
+                                <div className="flex items-center gap-2 bg-blue-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaCss3Alt className="text-xl" /> CSS
+                                </div>
+                                <div className="flex items-center gap-2 bg-cyan-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <FaReact className="text-xl" /> React.js
+                                </div>
+                                <div className="flex items-center gap-2 bg-orange-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                                  <SiFirebase className="text-xl" /> Firebase
+                                </div>
+                              </div>
+                            </CardContent>
+                          </Card>
                         </div>
                       </CardContent>
                     </Card>
@@ -213,10 +280,18 @@ export default function Portfolio() {
                         </div>
                         <h4 className="text-lg text-green-600 font-semibold mb-3">Ethnus Code Mithra</h4>
                         <p className="text-gray-600 mb-2">Certificate No: D7NZ6R9K</p>
-                        <Button variant="outline" size="sm">
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Verify Certificate
+                        <Button variant="outline" size="sm" asChild>
+                          <a
+                            href="https://ethnus.com/certverify/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center"
+                          >
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            Verify Certificate
+                          </a>
                         </Button>
+
                       </CardContent>
                     </Card>
                   </div>
@@ -297,152 +372,215 @@ export default function Portfolio() {
                       <Card>
                         <CardContent className="p-6">
                           <h3 className="text-xl font-bold text-gray-800 mb-4">Frontend Technologies</h3>
-                          <div className="flex flex-wrap gap-2">
-                            <Badge className="bg-orange-500">HTML</Badge>
-                            <Badge className="bg-blue-500">CSS</Badge>
-                            <Badge className="bg-purple-500">Bootstrap</Badge>
-                            <Badge className="bg-cyan-500">Tailwind CSS</Badge>
-                            <Badge className="bg-yellow-500">JavaScript</Badge>
-                            <Badge className="bg-blue-600">TypeScript</Badge>
-                            <Badge className="bg-cyan-600">React.js</Badge>
-                            <Badge className="bg-black">Vite</Badge>
+                          <div className="flex flex-wrap gap-3">
+                            <div className="flex items-center gap-2 bg-orange-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <FaHtml5 className="text-xl" /> HTML
+                            </div>
+                            <div className="flex items-center gap-2 bg-blue-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <FaCss3Alt className="text-xl" /> CSS
+                            </div>
+                            <div className="flex items-center gap-2 bg-purple-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <FaBootstrap className="text-xl" /> Bootstrap
+                            </div>
+                            <div className="flex items-center gap-2 bg-cyan-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <SiTailwindcss className="text-xl" /> Tailwind CSS
+                            </div>
+                            <div className="flex items-center gap-2 bg-yellow-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <SiJavascript className="text-xl" /> JavaScript
+                            </div>
+                            <div className="flex items-center gap-2 bg-blue-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <SiTypescript className="text-xl" /> TypeScript
+                            </div>
+                            <div className="flex items-center gap-2 bg-cyan-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <FaReact className="text-xl" /> React.js
+                            </div>
+                            <div className="flex items-center gap-2 bg-black text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              <SiVite className="text-xl" /> Vite
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
 
+
                       <Card className="mt-6">
                         <CardContent className="p-6">
                           <h3 className="text-xl font-bold text-gray-800 mb-4">State Management & APIs</h3>
-                          <div className="flex flex-wrap gap-2">
-                            <Badge className="bg-cyan-600">React Hooks</Badge>
-                            <Badge className="bg-purple-600">Context API</Badge>
-                            <Badge className="bg-violet-600">Redux Toolkit</Badge>
-                            <Badge className="bg-green-600">REST API</Badge>
+                          <div className="flex flex-wrap gap-3">
+                            <div className="flex items-center gap-2 bg-cyan-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              ⚛️ React Hooks
+                            </div>
+                            <div className="flex items-center gap-2 bg-purple-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🌐 Context API
+                            </div>
+                            <div className="flex items-center gap-2 bg-violet-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🛠 Redux Toolkit
+                            </div>
+                            <div className="flex items-center gap-2 bg-green-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🔗 REST API
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
+
                     </div>
 
                     <div>
                       <Card>
                         <CardContent className="p-6">
                           <h3 className="text-xl font-bold text-gray-800 mb-4">Authentication & Tools</h3>
-                          <div className="flex flex-wrap gap-2">
-                            <Badge className="bg-orange-600">Firebase Auth</Badge>
-                            <Badge className="bg-red-500">Google OAuth</Badge>
-                            <Badge className="bg-gray-700">JWT</Badge>
-                            <Badge className="bg-blue-500">Email.js</Badge>
-                            <Badge className="bg-orange-500">Postman</Badge>
-                            <Badge className="bg-purple-500">Thunder Client</Badge>
+                          <div className="flex flex-wrap gap-3">
+                            <div className="flex items-center gap-2 bg-orange-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🔐 Firebase Auth
+                            </div>
+                            <div className="flex items-center gap-2 bg-red-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🌍 Google OAuth
+                            </div>
+                            <div className="flex items-center gap-2 bg-gray-700 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🛡 JWT
+                            </div>
+                            <div className="flex items-center gap-2 bg-blue-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              📧 Email.js
+                            </div>
+                            <div className="flex items-center gap-2 bg-orange-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🧪 Postman
+                            </div>
+                            <div className="flex items-center gap-2 bg-purple-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              ⚡ Thunder Client
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
+
 
                       <Card className="mt-6">
                         <CardContent className="p-6">
                           <h3 className="text-xl font-bold text-gray-800 mb-4">Deployment & Design</h3>
-                          <div className="flex flex-wrap gap-2">
-                            <Badge className="bg-orange-600">Firebase Hosting</Badge>
-                            <Badge className="bg-teal-500">Netlify</Badge>
-                            <Badge className="bg-gray-800">GitHub Pages</Badge>
-                            <Badge className="bg-blue-600">GoDaddy</Badge>
-                            <Badge className="bg-black">Git</Badge>
-                            <Badge className="bg-gray-700">GitHub</Badge>
-                            <Badge className="bg-blue-500">Canva</Badge>
-                            <Badge className="bg-purple-600">Figma</Badge>
+                          <div className="flex flex-wrap gap-3">
+                            <div className="flex items-center gap-2 bg-orange-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🚀 Firebase Hosting
+                            </div>
+                            <div className="flex items-center gap-2 bg-teal-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🌐 Netlify
+                            </div>
+                            <div className="flex items-center gap-2 bg-gray-800 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              📄 GitHub Pages
+                            </div>
+                            <div className="flex items-center gap-2 bg-blue-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🔗 GoDaddy
+                            </div>
+                            <div className="flex items-center gap-2 bg-black text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🖥 Git
+                            </div>
+                            <div className="flex items-center gap-2 bg-gray-700 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🐙 GitHub
+                            </div>
+                            <div className="flex items-center gap-2 bg-blue-500 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              🎨 Canva
+                            </div>
+                            <div className="flex items-center gap-2 bg-purple-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transition-transform">
+                              ✏️ Figma
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
+
                     </div>
                   </div>
                 </div>
               )}
-
               {/* Page 5 - Projects */}
               {currentPage === 5 && (
                 <div className="p-6 md:p-12 h-full">
                   <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Latest Projects</h2>
 
                   <div className="grid md:grid-cols-2 gap-8">
-                    <Card className="border-2 border-blue-200 hover:border-blue-400 transition-colors">
+                    {/* Project 1 - Admin Dashboard */}
+                    <Card className="border-2 border-blue-200 hover:border-blue-400 transition-all hover:shadow-lg">
                       <CardContent className="p-6">
-                        <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-4 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-12 bg-blue-500 rounded mx-auto mb-2"></div>
-                            <p className="text-sm text-gray-600">Admin Dashboard</p>
-                          </div>
+                        {/* 🔹 Project Image */}
+                        <div className="w-full h-48 rounded-lg overflow-hidden mb-4">
+                          <img
+                            src="/webdev.jpg"
+                            alt="Admin Dashboard"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform"
+                          />
                         </div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">Admin Dashboards & Business Websites</h3>
+
+                        <h3 className="text-xl font-bold text-gray-800 mb-2">
+                          Admin Dashboards & Business Websites
+                        </h3>
                         <p className="text-gray-600 mb-4">
                           Built responsive admin dashboards and static business websites using React.js, HTML, CSS,
                           Bootstrap, and JavaScript.
                         </p>
+
+                        {/* 🔹 Tech Badges */}
                         <div className="flex flex-wrap gap-2 mb-4">
-                          <Badge>React.js</Badge>
-                          <Badge>Bootstrap</Badge>
-                          <Badge>Firebase</Badge>
-                        </div>
-                        <div className="flex gap-2">
-                          <Button size="sm">
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            Live Demo
-                          </Button>
-                          <Button variant="outline" size="sm">
-                            <Github className="w-4 h-4 mr-2" />
-                            Source Code
-                          </Button>
+                          <div className="flex items-center gap-2 bg-cyan-600 text-white px-3 py-1 rounded-lg text-sm shadow">
+                            <FaReact /> React.js
+                          </div>
+                          <div className="flex items-center gap-2 bg-purple-600 text-white px-3 py-1 rounded-lg text-sm shadow">
+                            <FaBootstrap /> Bootstrap
+                          </div>
+                          <div className="flex items-center gap-2 bg-orange-600 text-white px-3 py-1 rounded-lg text-sm shadow">
+                            <SiFirebase /> Firebase
+                          </div>
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="border-2 border-purple-200 hover:border-purple-400 transition-colors">
+                    {/* Project 2 - E-Commerce */}
+                    <Card className="border-2 border-purple-200 hover:border-purple-400 transition-all hover:shadow-lg">
                       <CardContent className="p-6">
-                        <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg mb-4 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-12 bg-purple-500 rounded mx-auto mb-2"></div>
-                            <p className="text-sm text-gray-600">E-Commerce App</p>
-                          </div>
+                        {/* 🔹 Project Image */}
+                        <div className="w-full h-48 rounded-lg overflow-hidden mb-4">
+                          <Image
+                            src="/ecom.webp"
+                            alt="E-Commerce App"
+                            width={500}
+                            height={300}
+                            className="w-full h-48 object-cover rounded-lg hover:scale-105 transition-transform"
+                          />
+
                         </div>
+
                         <h3 className="text-xl font-bold text-gray-800 mb-2">E-Commerce Web Application</h3>
                         <p className="text-gray-600 mb-4">
                           Developed responsive UIs with product listing, cart, and checkout interfaces. Integrated
                           authentication and consumed REST APIs.
                         </p>
+
+                        {/* 🔹 Tech Badges */}
                         <div className="flex flex-wrap gap-2 mb-4">
-                          <Badge>React.js</Badge>
-                          <Badge>Redux</Badge>
-                          <Badge>REST API</Badge>
-                        </div>
-                        <div className="flex gap-2">
-                          <Button size="sm">
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            Live Demo
-                          </Button>
-                          <Button variant="outline" size="sm">
-                            <Github className="w-4 h-4 mr-2" />
-                            Source Code
-                          </Button>
+                          <div className="flex items-center gap-2 bg-cyan-600 text-white px-3 py-1 rounded-lg text-sm shadow">
+                            <FaReact /> React.js
+                          </div>
+                          <div className="flex items-center gap-2 bg-violet-600 text-white px-3 py-1 rounded-lg text-sm shadow">
+                            <SiRedux /> Redux
+                          </div>
+                          <div className="flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-lg text-sm shadow">
+                            <MdApi /> REST API
+                          </div>
                         </div>
                       </CardContent>
                     </Card>
                   </div>
 
+                  {/* Key Responsibilities */}
                   <div className="mt-8">
                     <Card>
                       <CardContent className="p-6">
                         <h3 className="text-xl font-bold text-gray-800 mb-4">Key Responsibilities</h3>
-                        <ul className="space-y-2 text-gray-600">
-                          <li>• Built responsive UIs with React.js, HTML, CSS, JavaScript, Bootstrap, Tailwind CSS</li>
+                        <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                          <li>Built responsive UIs with React.js, HTML, CSS, JavaScript, Bootstrap, Tailwind CSS</li>
                           <li>
-                            • Integrated authentication systems (Firebase Auth, Google OAuth, JWT) and APIs for
-                            real-time data
+                            Integrated authentication systems (Firebase Auth, Google OAuth, JWT) and APIs for real-time data
                           </li>
-                          <li>• Ensured cross-browser compatibility, responsiveness, and performance optimization</li>
+                          <li>Ensured cross-browser compatibility, responsiveness, and performance optimization</li>
                           <li>
-                            • Deployed applications using Firebase Hosting, Netlify, GitHub Pages with domain setup via
-                            GoDaddy
+                            Deployed applications using Firebase Hosting, Netlify, GitHub Pages with domain setup via GoDaddy
                           </li>
-                          <li>• Collaborated with UI/UX and backend teams using Git & GitHub for version control</li>
+                          <li>Collaborated with UI/UX and backend teams using Git & GitHub for version control</li>
                         </ul>
                       </CardContent>
                     </Card>
@@ -466,23 +604,22 @@ export default function Portfolio() {
                           Building responsive and scalable web applications using React.js, JavaScript, and modern
                           frontend technologies.
                         </p>
-                        <Button>Learn More</Button>
                       </CardContent>
                     </Card>
 
                     <Card className="border-2 border-purple-200 hover:border-purple-400 transition-all hover:shadow-lg">
                       <CardContent className="p-6 text-center">
                         <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <span className="text-white text-2xl">🎨</span>
+                          <span className="text-white text-2xl">🔗</span>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-3">UI/UX Design</h3>
+                        <h3 className="text-xl font-bold text-gray-800 mb-3">API Integration</h3>
                         <p className="text-gray-600 mb-4">
-                          Creating intuitive and engaging user interfaces with modern design principles and user
-                          experience best practices.
+                          Connecting front-end applications with REST APIs and Firebase services
+                          to deliver real-time, dynamic data experiences.
                         </p>
-                        <Button>Learn More</Button>
                       </CardContent>
                     </Card>
+
 
                     <Card className="border-2 border-green-200 hover:border-green-400 transition-all hover:shadow-lg">
                       <CardContent className="p-6 text-center">
@@ -494,7 +631,6 @@ export default function Portfolio() {
                           Ensuring your website looks perfect on all devices with mobile-first responsive design
                           approach.
                         </p>
-                        <Button>Learn More</Button>
                       </CardContent>
                     </Card>
 
@@ -508,7 +644,6 @@ export default function Portfolio() {
                           Optimizing web applications for speed, performance, and better user experience across all
                           platforms.
                         </p>
-                        <Button>Learn More</Button>
                       </CardContent>
                     </Card>
                   </div>
@@ -543,15 +678,27 @@ export default function Portfolio() {
                           <div className="mt-6">
                             <h4 className="font-semibold text-gray-800 mb-3">Connect with me:</h4>
                             <div className="flex gap-3">
-                              <Button variant="outline" size="sm">
+                              <a
+                                href="https://www.linkedin.com/in/jagadish-p-b27392266/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center border border-purple-300 rounded-md px-3 py-2 text-sm text-gray-700 hover:border-purple-500 hover:shadow-md transition"
+                              >
                                 <Linkedin className="w-4 h-4 mr-2" />
                                 LinkedIn
-                              </Button>
-                              <Button variant="outline" size="sm">
+                              </a>
+
+                              <a
+                                href="https://github.com/P-JAGADISH"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center border border-purple-300 rounded-md px-3 py-2 text-sm text-gray-700 hover:border-purple-500 hover:shadow-md transition"
+                              >
                                 <Github className="w-4 h-4 mr-2" />
                                 GitHub
-                              </Button>
+                              </a>
                             </div>
+
                           </div>
                         </CardContent>
                       </Card>
@@ -638,9 +785,8 @@ export default function Portfolio() {
                   <button
                     key={page.id}
                     onClick={() => goToPage(page.id)}
-                    className={`w-3 h-3 rounded-full transition-all ${
-                      currentPage === page.id ? "bg-blue-500 scale-125" : "bg-gray-300 hover:bg-gray-400"
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-all ${currentPage === page.id ? "bg-blue-500 scale-125" : "bg-gray-300 hover:bg-gray-400"
+                      }`}
                     title={page.title}
                   />
                 ))}
