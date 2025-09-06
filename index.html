@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagadish P - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="book-loader">
+      <div class="book-loader-inner">
+        <div class="book-page-loader"></div>
+        <div class="book-page-loader"></div>
+        <div class="book-page-loader"></div>
+      </div>
+      <div class="loading-text">Loading Portfolio...</div>
+    </div>
+  </div>
+
+  <div class="wrapper" id="mainWrapper">
+    <!-- Covers -->
+    <div class="cover cover-left"></div>
+    <div class="cover cover-right"></div>
+
+    <!-- Book -->
+    <div class="book">
+      <!-- Page 1 - Profile -->
+      <div class="book-page page-left" id="page-1">
+        <div class="profile-page">
+          <div class="profile-content">
+            <div class="profile-img-container">
+              <img src="/placeholder.svg?height=180&width=180" alt="Jagadish P" class="profile-img">
+            </div>
+            <h1 class="profile-name">Jagadish P</h1>
+            <h3 class="profile-title">React.js Frontend Developer</h3>
+
+            <div class="social-media">
+              <a href="https://linkedin.com/in/jagadish" class="social-link"><i class="bi bi-linkedin"></i></a>
+              <a href="https://naukri.com/profile/jagadish" class="social-link"><i class="bi bi-briefcase"></i></a>
+              <a href="mailto:jagajagadish1410@gmail.com" class="social-link"><i class="bi bi-envelope"></i></a>
+              <a href="tel:+919384997035" class="social-link"><i class="bi bi-telephone"></i></a>
+            </div>
+
+            <p class="profile-description">
+              Frontend Developer with 1.5+ years of experience in developing responsive and scalable web applications. Skilled in React.js, Redux, JavaScript, TypeScript, HTML, CSS, Bootstrap, and Tailwind CSS. Proficient in building dynamic UIs, integrating REST APIs, and implementing authentication systems.
+            </p>
+
+            <div class="btn-box">
+              <button class="btn btn-primary">Download CV</button>
+              <button class="btn btn-outline contact-me">Contact Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 - Work Experience -->
+      <div class="book-page page-right" id="page-2">
+        <div class="page-content">
+          <h2 class="page-title">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">April 2025 - Present</div>
+              <div class="timeline-content">
+                <h4>Frontend Developer - Jayam Web Solutions Pvt Ltd</h4>
+                <p>Built admin dashboards, user-facing interfaces, and static business websites using React.js, HTML, CSS, Bootstrap, and JavaScript. Integrated Firebase Authentication with Firestore & Storage. Used Email.js for contact form submissions and deployed apps via Firebase Hosting with GoDaddy domain setup.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">March 2024 - March 2025</div>
+              <div class="timeline-content">
+                <h4>Frontend Developer - JK Global IT Solutions</h4>
+                <p>Developed responsive UIs and dashboards using React.js, Tailwind CSS, and Bootstrap. Built product listing, cart, and checkout interfaces with smooth navigation. Integrated authentication systems and consumed REST APIs for real-time data display.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h4>Frontend Developer Certification - Ethnus Code Mithra</h4>
+                <p>Completed comprehensive frontend development certification program. Certificate No: D7NZ6R9K. Gained expertise in modern web development technologies and best practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 - Education -->
+      <div class="book-page page-left hidden" id="page-3">
+        <div class="page-content">
+          <h2 class="page-title">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2019 - 2023</div>
+              <div class="timeline-content">
+                <h4>B.Tech in Information Technology - Loyola Institute Of Technology</h4>
+                <p>Graduated with 78% marks. Gained strong foundation in computer science fundamentals, programming languages, and software development methodologies. Specialized in web technologies and modern development frameworks.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2017 - 2019</div>
+              <div class="timeline-content">
+                <h4>Higher Secondary Certificate - Sri Lakshmi Vidyalaya Matriculation Hr Sec School</h4>
+                <p>Completed HSC with 72% marks. Focused on Mathematics and Computer Science subjects, building analytical and logical thinking skills essential for programming and software development.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2017</div>
+              <div class="timeline-content">
+                <h4>Secondary School Leaving Certificate - Bala Mandir Matriculation Hr Sec School</h4>
+                <p>Completed SSLC with 82% marks. Established strong academic foundation with excellent performance in core subjects including Mathematics, Science, and English.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 - Services -->
+      <div class="book-page page-right hidden" id="page-4">
+        <div class="page-content">
+          <h2 class="page-title">My Services</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>Frontend Development</h4>
+              <p>Building responsive and interactive web applications using React.js, JavaScript, and modern CSS frameworks.</p>
+              <button class="btn btn-primary">Read More</button>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4>Responsive Design</h4>
+              <p>Creating mobile-first, responsive designs that work seamlessly across all devices and screen sizes.</p>
+              <button class="btn btn-primary">Read More</button>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h4>API Integration</h4>
+              <p>Integrating REST APIs and implementing authentication systems for dynamic and secure web applications.</p>
+              <button class="btn btn-primary">Read More</button>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-cloud-upload"></i>
+              </div>
+              <h4>Deployment & Hosting</h4>
+              <p>Deploying applications using Firebase Hosting, Netlify, and GitHub Pages with custom domain setup.</p>
+              <button class="btn btn-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5 - Skills -->
+      <div class="book-page page-left hidden" id="page-5">
+        <div class="page-content">
+          <h2 class="page-title">Technical Skills</h2>
+          <div class="skills-section">
+            <div class="skill-category">
+              <h4>Frontend Technologies</h4>
+              <div class="skill-tags">
+                <span class="skill-tag html"><i class="bi bi-filetype-html"></i> HTML</span>
+                <span class="skill-tag css"><i class="bi bi-filetype-css"></i> CSS</span>
+                <span class="skill-tag js"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                <span class="skill-tag react">⚛ React.js</span>
+                <span class="skill-tag bootstrap">B Bootstrap</span>
+                <span class="skill-tag tailwind">~ Tailwind CSS</span>
+                <span class="skill-tag typescript">TS TypeScript</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>State Management & APIs</h4>
+              <div class="skill-tags">
+                <span class="skill-tag react">🪝 React Hooks</span>
+                <span class="skill-tag context">📦 Context API</span>
+                <span class="skill-tag redux">🔄 Redux Toolkit</span>
+                <span class="skill-tag api">🌐 REST API</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Authentication & Tools</h4>
+              <div class="skill-tags">
+                <span class="skill-tag firebase">🔥 Firebase Auth</span>
+                <span class="skill-tag oauth">🔐 Google OAuth</span>
+                <span class="skill-tag jwt">🎫 JWT</span>
+                <span class="skill-tag git">📚 Git/GitHub</span>
+                <span class="skill-tag figma">🎨 Figma</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Languages</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tamil">🇮🇳 Tamil</span>
+                <span class="skill-tag english">🇬🇧 English</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 6 - Latest Project -->
+      <div class="book-page page-right hidden" id="page-6">
+        <div class="page-content">
+          <h2 class="page-title">Latest Projects</h2>
+          <div class="project-showcase">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=200&width=300" alt="E-Commerce Dashboard">
+            </div>
+            <div class="project-details">
+              <h4>E-Commerce Web Application</h4>
+              <a href="#" class="live-preview">Live Preview <i class="bi bi-box-arrow-up-right"></i></a>
+              <div class="tech-used">
+                <h5>Tech Stack Used:</h5>
+                <p>Built using React.js, Redux Toolkit for state management, Tailwind CSS for styling, Firebase Authentication for user management, and REST API integration for real-time product data. Deployed on Firebase Hosting with custom domain setup.</p>
+              </div>
+              <div class="project-buttons">
+                <button class="btn btn-primary">Source Code</button>
+                <button class="btn btn-outline">More Projects</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 7 - Contact -->
+      <div class="book-page page-left hidden" id="page-7">
+        <div class="page-content">
+          <h2 class="page-title">Contact Me!</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="bi bi-telephone"></i>
+              <span>+91 9384997035</span>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <span>jagajagadish1410@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>Chennai - Tamil Nadu</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <button class="nav-btn prev-btn" id="prevBtn">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <span class="page-number" id="pageNumber">1</span>
+      <button class="nav-btn next-btn" id="nextBtn">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Page Indicator -->
+    <div class="page-indicator">
+      <span class="indicator-dot active" data-page="1"></span>
+      <span class="indicator-dot" data-page="2"></span>
+      <span class="indicator-dot" data-page="3"></span>
+      <span class="indicator-dot" data-page="4"></span>
+      <span class="indicator-dot" data-page="5"></span>
+      <span class="indicator-dot" data-page="6"></span>
+      <span class="indicator-dot" data-page="7"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
